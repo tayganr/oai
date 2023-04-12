@@ -1,6 +1,6 @@
-# Module 01 - Create an Azure OpenAI Resource
+# Module 02 - Deploy a Model
 
-**[Home](../README.md)** - [Next Module >](../module02.md)
+[< Previous Module](./module01.md) - **[Home](../README.md)** - [Next Module >](./module03.md)
 
 ## :loudspeaker: Introduction
 

@@ -13,35 +13,35 @@ Azure OpenAI is a cloud-based service that provides access to OpenAI's advanced 
 ## :test_tube: Learning Modules - Basics
 
 1. [Create an Azure OpenAI resource](./modules/module01.md)
-1. [Deploy a model](./modules/module00.md)
-1. [Fine-tune a model](./modules/module00.md)
+1. [Deploy a model](./modules/module02.md)
+1. [Fine-tune a model]
 
 <div align="right"><a href="#readme">↥ back to top</a></div>
 
 ## :test_tube: Learning Modules - Advanced
 
-1. [Chat](./modules/module00.md)
-1. [Search](./modules/module00.md)
-1. [Speech to Speech](./modules/module00.md)
-1. [REST API](./modules/module00.md)
-1. [SDK](./modules/module00.md)
+1. [Chat]
+1. [Search]
+1. [Speech to Speech]
+1. [REST API]
+1. [SDK]
 
 <div align="right"><a href="#readme">↥ back to top</a></div>
 
 ## :book: Concepts
 
-* [OpenAI](./concepts/concept01.md)
-* [Generative AI](./concepts/concept01.md)
-* [Models](./concepts/concept01.md)
-* [Quotas and Limits](./concepts/concept01.md)
-* [Tokens](./concepts/concept01.md)
-* [Prompt Engineering](./concepts/concept01.md)
-* [Content Filtering](./concepts/concept01.md)
-* [Embeddings](./concepts/concept01.md)
-* [Parameters](./concepts/concept01.md)
-* [Data Privacy](./concepts/concept01.md)
-* [Pricing](./concepts/concept01.md)
-* [Use Cases](./concepts/concept01.md)
+* [OpenAI]
+* [Generative AI]
+* [Models]
+* [Quotas and Limits]
+* [Tokens]
+* [Prompt Engineering]
+* [Content Filtering]
+* [Embeddings]
+* [Parameters]
+* [Data Privacy]
+* [Pricing]
+* [Use Cases]
 
 <div align="right"><a href="#readme">↥ back to top</a></div>
 
