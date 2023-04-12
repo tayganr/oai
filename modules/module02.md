@@ -4,115 +4,119 @@
 
 ## :loudspeaker: Introduction
 
-In this module, you will learn how to create an Azure OpenAI resource within an Azure subscription and use it to access advanced language models and generative AI capabilities. You can apply these coding and language models to a variety of use cases, such as writing assistance, code generation, and reasoning over data.
+In this module, you will learn how to deploy a model so that you can use the API to get text or inference based on your prompts. When you create a new deployment, you will need to specify which base model you want to deploy.
+
+> Note: You cannot deploy more than one instance of the same model.
 
 ## :thinking: Prerequisites
 
-* An [Azure account](https://azure.microsoft.com/free/) with an active subscription. Note: If you don't have access to an Azure subscription, you may be able to start with a [free account](https://www.azure.com/free).
-* You must have the necessary privileges within your Azure subscription to create resources and  perform role assignments.
-* Access granted to Azure OpenAI in the desired Azure subscription. Note: You can apply for access to Azure OpenAI by completing the form at [https://aka.ms/oai/access](https://aka.ms/oai/access)
+* An [Azure account](https://azure.microsoft.com/free/) with an active subscription.
+* An Azure OpenAI resource (see [module 01](./module01.md))
+* Sufficient access to deploy a model (e.g. `Owner`, `Contributor`, `Cognitive Services OpenAI Contributor`).
 
 ## :dart: Objectives
 
-* [ ] Create an Azure OpenAI resource within an Azure subscription via the Azure Portal.
-* [ ] View the details of a successfully deployed Azure OpenAI resource.
+* [ ] To learn how to deploy a model via Azure OpenAI Studio.
+* [ ] To learn how to access the model deployment from the Playground.
+* [ ] To learn how to test the model with different inputs and outputs.
 
 <div align="right"><a href="#readme">↥ back to top</a></div>
 
-## 1. Create an Azure OpenAI resource
+## :bookmark_tabs: Table of Contents
 
-1. Sign in to the [Azure portal](https://portal.azure.com), navigate to the **Home** screen, click **Create a resource**.
+| #  | Section |
+| --- | --- |
+| 1 | [Deploy a Model via Azure OpenAI Studio (Recommended)](#1-create-a-microsoft-purview-account) |
+| 2 | [Deploy a Model via the Azure Portal (Optional)](#2-grant-access-to-microsoft-purviews-data-plane) |
 
-    ![ALT](../images/modules/module01/01.01.png)
+<div align="right"><a href="#readme">↥ back to top</a></div>
 
-1. Search the Marketplace for `Azure OpenAI`, select the **Azure OpenAI** item in the search results, and click **Create**.
+## 1. Deploy a Model via Azure OpenAI Studio (Recommended)
 
-    ![ALT](../images/modules/module01/01.02.png)
+1. Navigate to your Azure OpenAI resource instance (e.g. `oaisvc-{randomID}`) and click **Go to Azure OpenAI Studio**.
 
-1. Select your target **Subscription** (e.g. `Contoso Subscription`).
+    ![ALT](../images/modules/module02/02.07.png)
 
-    ![ALT](../images/modules/module01/01.03.png)
+1. Click **Deployments**.
 
-1. Under **Resource group**, click **Create new**.
+    > Note: Deployments enable you to make calls against a provided base model or your fine-tuned model.
 
-    ![ALT](../images/modules/module01/01.04.png)
+    ![ALT](../images/modules/module02/02.08.png)
 
-1. Provide the resource group a name (e.g. `oailab`) and click **OK**.
+1. Click **Create new deployment**.
 
-    ![ALT](../images/modules/module01/01.05.png)
+    ![ALT](../images/modules/module02/02.09.png)
 
-1. Select a **Region** (e.g. `West Europe`).
+1. Select a **Model** (e.g. `text-davinci-003`).
 
-    ![ALT](../images/modules/module01/01.06.png)
+    > Note: Azure OpenAI provides access to many different models, grouped by family and capability. For more information, check out the [Azure OpenAI Service models](https://learn.microsoft.com/azure/cognitive-services/openai/concepts/models) page.
 
-    > Note: Azure OpenAI is currently only available in a select number of regions (e.g. `East US`, `South Central US`, and `West Europe`). To check the latest region availability for Azure OpenAI, check the [Azure Products by Region](https://azure.microsoft.com/explore/global-infrastructure/products-by-region/?products=cognitive-services) page.
+    ![ALT](../images/modules/module02/02.10.png)
 
-1. Provide a **Name** (e.g. `oaisvc-{randomID}`).
+1. Specify a **Model deployment name** (e.g. `my_text_davinci_003`) and click **Create**.
 
-    ![ALT](../images/modules/module01/01.07.png)
+    ![ALT](../images/modules/module02/02.11.png)
 
-1. Select a **Pricing tier** (e.g. `Standard S0`).
+1. Once successfully deployed, select the model and click **Open in Playground**.
 
-    ![ALT](../images/modules/module01/01.08.png)
+    ![ALT](../images/modules/module02/02.12.png)
 
-    > Note: As of 2023-04-12, there is only one pricing tier available (`Standard S0`). For the latest information on pricing, check out the [Azure OpenAI Service pricing](https://azure.microsoft.com/pricing/details/cognitive-services/openai-service/) page.
+1. To test the model, load an example from the drop-down menu or alternatively, type a prompt within the editable text field (e.g. `What is Azure OpenAI?`), and click **Generate**.
 
-1. Read the **Content review policy** and click **Next**.
+    ![ALT](../images/modules/module02/02.13.png)
 
-    ![ALT](../images/modules/module01/01.09.png)
+## 2. Deploy a Model via the Azure Portal (Optional)
 
-    > :bulb: **Did you know?**
-    >
-    > To protect the Azure OpenAI Service from harmful use, Microsoft logs the prompts and completions from the service for up to thirty days. If the automated systems flag any content, Microsoft may have authorized employees look at the prompt and completion content to detect and mitigate potential abuse. For more information on how the Azure OpenAI service processes, uses, and stores customer data, check out the [Data, privacy, and security for Azure OpenAI Service](https://learn.microsoft.com/legal/cognitive-services/openai/data-privacy) page.
+1. Navigate to your Azure OpenAI resource instance (e.g. `oaisvc-{randomID}`) and click **Model deployments**.
 
-1. Click **Next**.
-
-    ![ALT](../images/modules/module01/01.10.png)
+    ![ALT](../images/modules/module02/02.01.png)
 
 1. Click **Create**.
 
-    ![ALT](../images/modules/module01/01.11.png)
+    ![ALT](../images/modules/module02/02.02.png)
 
-1. Wait several minutes while your deployment is in progress. Once complete, click **Go to resource**.
+1. Specify a **Model deployment name** (e.g. `my_text_davinci_003`).
 
-    > Note: You may need to occasionally click **Refresh** to view the latest status of the deployment.
+    ![ALT](../images/modules/module02/02.03.png)
 
-    ![ALT](../images/modules/module01/01.12.png)
+1. Select a **Model** (e.g. `text-davinci-003`).
+
+    ![ALT](../images/modules/module02/02.04.png)
+
+1. Select a **Version** (e.g. `1`).
+
+    ![ALT](../images/modules/module02/02.05.png)
+
+1. Click **Save**.
+
+    ![ALT](../images/modules/module02/02.06.png)
 
 <div align="right"><a href="#readme">↥ back to top</a></div>
 
 ## :mortar_board: Knowledge Check
 
-1. What is the name of the Azure service that you need to search for in the Marketplace to create an Azure OpenAI resource?
+1. What is a deployment in the context of Azure OpenAI?
 
-    A) Azure OpenAI  
-    B) Azure Cognitive Services  
-    C) Azure Machine Learning
+    A ) A way to make calls against a base model or a fine-tuned model.  
+    B ) A way to train a new model from scratch or fine-tune an existing model.  
+    C ) A way to share a model with other users or services.
 
-2. What are some of the regions where Azure OpenAI is currently available?
+2. Which of the following attributes is not required to deploy an Azure OpenAI model?
 
-    A ) East US, South Central US, and West Europe  
-    B ) North Europe, Central US, and Antarctica  
-    C ) West US, West Canada, and Brazil South
+    A ) Model deployment name
+    B ) Model family
+    C ) Model version
 
-3. How long does Microsoft log the prompts and completions from the Azure OpenAI service for content review purposes?
+3. Which of the following is a feature that Azure OpenAI Studio has but the Azure Portal does not?
 
-    A ) Up to seven days  
-    B) Up to thirty days  
-    C) Up to ninety days
+    A ) There is no difference, they are the same.
+    B ) Selecting a version of the model.
+    C ) Testing the model in the Playground.
 
 <div align="right"><a href="#readme">↥ back to top</a></div>
 
 ## :tada: Summary
 
-You have successfully created an Azure OpenAI resource using the Azure portal.
-
-You have learned how to:
-
-* Search for and select the Azure OpenAI service from the Marketplace.
-* Choose a subscription, resource group, region, name, and pricing tier for your resource.
-* Create your Azure OpenAI resource and view its details.
-
-By completing this module, you will be able to use Azure OpenAI to generate natural language content with powerful models like GPT-3.
+You have successfully learned how to deploy an Azure OpenAI model via Azure OpenAI Studio and via the Azure Portal. You have also learned how to test the model in the Playground and how to select different models and versions. You have gained an understanding of what a deployment is and what attributes are required to create one.
 
 [Continue >](../modules/module02.md)

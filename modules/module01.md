@@ -41,11 +41,13 @@ In this module, you will learn how to create an Azure OpenAI resource within an 
 
     ![ALT](../images/modules/module01/01.05.png)
 
-1. Select a **Region** (e.g. `West Europe`).
+1. Select a **Region** (e.g. `East US`, `South Central US`, or `West Europe`).
 
     ![ALT](../images/modules/module01/01.06.png)
 
-    > Note: Azure OpenAI is currently only available in a select number of regions (e.g. `East US`, `South Central US`, and `West Europe`). To check the latest region availability for Azure OpenAI, check the [Azure Products by Region](https://azure.microsoft.com/explore/global-infrastructure/products-by-region/?products=cognitive-services) page.
+    > Note #1: Azure OpenAI is currently only available in a select number of regions (e.g. `East US`, `South Central US`, and `West Europe`). To check the latest region availability for Azure OpenAI, check the [Azure Products by Region](https://azure.microsoft.com/explore/global-infrastructure/products-by-region/?products=cognitive-services) page.
+    >
+    > Note #2: Specific models being available for deployment within an Azure OpenAI instance may vary by region. As of 2022-04-12, ChatGPT (`gpt-35-turbo`) is not currently available in West Europe. For more information, refer to [Model Summary table and region availability](https://learn.microsoft.com/azure/cognitive-services/openai/concepts/models#model-summary-table-and-region-availability) section within the Azure OpenAI Service models page.
 
 1. Provide a **Name** (e.g. `oaisvc-{randomID}`).
 
@@ -85,9 +87,9 @@ In this module, you will learn how to create an Azure OpenAI resource within an 
 
 1. What is the name of the Azure service that you need to search for in the Marketplace to create an Azure OpenAI resource?
 
-    A) Azure OpenAI  
-    B) Azure Cognitive Services  
-    C) Azure Machine Learning
+    A ) Azure OpenAI  
+    B ) Azure Cognitive Services  
+    C ) Azure Machine Learning
 
 2. What are some of the regions where Azure OpenAI is currently available?
 
@@ -98,8 +100,8 @@ In this module, you will learn how to create an Azure OpenAI resource within an 
 3. How long does Microsoft log the prompts and completions from the Azure OpenAI service for content review purposes?
 
     A ) Up to seven days  
-    B) Up to thirty days  
-    C) Up to ninety days
+    B ) Up to thirty days  
+    C ) Up to ninety days
 
 <div align="right"><a href="#readme">↥ back to top</a></div>
 
