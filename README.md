@@ -1,0 +1,2 @@
+# oai
+Azure OpenAI Workshop
