@@ -26,8 +26,8 @@ In this module, you will learn how to deploy a model so that you can use the API
 
 | #  | Section |
 | --- | --- |
-| 1 | [Deploy a Model via Azure OpenAI Studio (Recommended)](#1-create-a-microsoft-purview-account) |
-| 2 | [Deploy a Model via the Azure Portal (Optional)](#2-grant-access-to-microsoft-purviews-data-plane) |
+| 1 | [Deploy a Model via Azure OpenAI Studio (Recommended)](#1-deploy-a-model-via-azure-openai-studio-recommended) |
+| 2 | [Deploy a Model via the Azure Portal (Optional)](#2-deploy-a-model-via-the-azure-portal-optional) |
 
 <div align="right"><a href="#readme">↥ back to top</a></div>
 
