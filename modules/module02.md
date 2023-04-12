@@ -101,19 +101,19 @@ In this module, you will learn how to deploy a model so that you can use the API
 
     A ) A way to make calls against a base model or a fine-tuned model.  
     B ) A way to train a new model from scratch or fine-tune an existing model.  
-    C ) A way to share a model with other users or services.
+    C ) A way to share a model with other users or services.  
 
 2. Which of the following attributes is not required to deploy an Azure OpenAI model?
 
-    A ) Model deployment name
-    B ) Model family
-    C ) Model version
+    A ) Model deployment name  
+    B ) Model family  
+    C ) Model version  
 
 3. Which of the following is a feature that Azure OpenAI Studio has but the Azure Portal does not?
 
-    A ) There is no difference, they are the same.
-    B ) Selecting a version of the model.
-    C ) Testing the model in the Playground.
+    A ) There is no difference, they are the same.  
+    B ) Selecting a version of the model.  
+    C ) Testing the model in the Playground.  
 
 <div align="right"><a href="#readme">↥ back to top</a></div>
 
