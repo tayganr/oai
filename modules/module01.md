@@ -1,6 +1,6 @@
 # Module 01 - Create an Azure OpenAI Resource
 
-**[Home](../README.md)** - [Next Module >](../module02.md)
+**[Home](../README.md)** - [Next Module >](./module02.md)
 
 ## :loudspeaker: Introduction
 
