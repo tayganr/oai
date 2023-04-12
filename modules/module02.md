@@ -65,6 +65,8 @@ In this module, you will learn how to deploy a model so that you can use the API
 
     ![ALT](../images/modules/module02/02.13.png)
 
+<div align="right"><a href="#readme">↥ back to top</a></div>
+
 ## 2. Deploy a Model via the Azure Portal (Optional)
 
 1. Navigate to your Azure OpenAI resource instance (e.g. `oaisvc-{randomID}`) and click **Model deployments**.
