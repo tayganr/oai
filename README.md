@@ -14,10 +14,10 @@ Azure OpenAI is a cloud-based service that provides access to OpenAI's advanced 
 
 1. [Create an Azure OpenAI resource](./modules/module01.md)
 1. [Deploy a model](./modules/module02.md)
-1. [Text Completion]
-1. [Chat Completion]
+1. [Completions]
+1. [Chat Completions]
 1. [Embeddings]
-1. [Fine-tune a model]
+1. [Fine-tuning]
 
 <div align="right"><a href="#readme">↥ back to top</a></div>
 
