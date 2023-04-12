@@ -10,20 +10,14 @@ Azure OpenAI is a cloud-based service that provides access to OpenAI's advanced 
 * You must have the necessary privileges within your Azure subscription to create resources and  perform role assignments.
 * Access granted to Azure OpenAI in the desired Azure subscription. Note: You can apply for access to Azure OpenAI by completing the form at [https://aka.ms/oai/access](https://aka.ms/oai/access)
 
-## :test_tube: Learning Modules - Basics
+## :test_tube: Learning Modules
 
 1. [Create an Azure OpenAI resource](./modules/module01.md)
 1. [Deploy a model](./modules/module02.md)
+1. [Text Completion]
+1. [Chat Completion]
+1. [Embeddings]
 1. [Fine-tune a model]
-
-<div align="right"><a href="#readme">↥ back to top</a></div>
-
-## :test_tube: Learning Modules - Advanced
-
-1. [Chat]
-1. [Search]
-1. [REST API]
-1. [SDK]
 
 <div align="right"><a href="#readme">↥ back to top</a></div>
 
