@@ -105,7 +105,7 @@ In this module, you will learn how to create an Azure OpenAI resource within an 
 
 ## :tada: Summary
 
-You have successfully created an Azure OpenAI resource using the Azure portal. 
+You have successfully created an Azure OpenAI resource using the Azure portal.
 
 You have learned how to:
 
