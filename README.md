@@ -2,7 +2,7 @@
 
 ## What is Azure OpenAI?
 
-Azure OpenAI is a cloud-based service that provides access to OpenAI's advanced language models such as **GPT-4**, **GPT-3**, **Codex**, and **DALL-E**, with the enterprise readiness of Azure (e.g. private networking, regional availability, content filtering, and role-based access control). Once an Azure OpenAI Service resource is provisioned within an Azure subscription, users can access the service through REST APIs, Python SDK, or a web-based interface known as Azure OpenAI Studio.
+Azure OpenAI is a cloud-based service that provides access to OpenAI's advanced language models such as **GPT-4**, **GPT-3**, and **DALL-E**, with the enterprise readiness of Azure (e.g. private networking, regional availability, content filtering, and role-based access control). Once an Azure OpenAI Service resource is provisioned within an Azure subscription, users can access the service through REST APIs, Python SDK, or a web-based interface known as Azure OpenAI Studio.
 
 ## :thinking: Prerequisites
 
@@ -22,7 +22,6 @@ Azure OpenAI is a cloud-based service that provides access to OpenAI's advanced 
 
 1. [Chat]
 1. [Search]
-1. [Speech to Speech]
 1. [REST API]
 1. [SDK]
 
@@ -30,9 +29,7 @@ Azure OpenAI is a cloud-based service that provides access to OpenAI's advanced 
 
 ## :book: Concepts
 
-* [OpenAI]
-* [Generative AI]
-* [Models]
+* [Models](./concepts/models.md)
 * [Quotas and Limits]
 * [Tokens]
 * [Prompt Engineering]
